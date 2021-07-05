@@ -1,0 +1,38 @@
+[
+    {
+        "firstName":"Linda",
+        "lastName":"Curtis",
+        "email":"linda@email.com",
+        "address":"179 Dena Causeway 44031-3776 South Cathrineview Maine",
+        "isAdmin":true,
+        "status":"Authenticated"
+    },
+    {
+        "firstName":"Kaelyn",
+        "lastName":"Treutel",
+        "email":"Jacques.Zulauf13@hotmail.com",
+        "address":"820 Gerald Street 95714 Lake Bettie Wyoming",
+        "status":"Authenticated"
+    },
+    {
+        "firstName":"Cassandra",
+        "lastName":"Tremblay",
+        "email":"Elliot.Moen@hotmail.com",
+        "address":"962 Hudson Stravenue 70137 Heidenreichmouth Nevada",
+        "status":"Authenticated"
+    },
+    {
+        "firstName":"Willie",
+        "lastName":"Pollich",
+        "email":"Jeff.Kassulke38@yahoo.com",
+        "address":"554 Precious Springs 93823-4399 North Meredith Idaho",
+        "status":"Authenticated"
+    },
+    {
+        "firstName":"Julie",
+        "lastName":"Cartier",
+        "email":"Uriah_Ferry73@yahoo.com",
+        "address":"2787 Hills Gardens 26498-9148 Hermanshire Pennsylvania",
+        "status":"Authenticated"
+    }
+]

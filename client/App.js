@@ -4,7 +4,7 @@ import React, { Component }from 'react';
 
 class App extends Component {
   render(){
-    return(<hr/>)
+    return(<div>I am rendering my app</div>)
   }
 }
 

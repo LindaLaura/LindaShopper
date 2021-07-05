@@ -3,11 +3,11 @@
 
 const PORT = 1337
 const server = require('./index')
-//const {db} = require('./db')
+const db  = require('./db/db')
 
 const init = async () => {
   try {
-    //cawait db.sync();
+    await db.sync();
     server.listen(PORT, () => console.log(`
           Listening on port ${PORT}
           http://localhost:${PORT}/
