@@ -1,4 +1,4 @@
-const {STRING, TEXT, DECIMAL}= require('sequelize'); // for thing like Sequelize.STRING
+const {STRING, TEXT, DECIMAL, INTEGER}= require('sequelize'); // for thing like Sequelize.STRING
 
 //import your db
 const db = require('../db')
@@ -26,6 +26,10 @@ const Product = db.define('product',{
         validate:{
             notEmpty:true
         }
+    },
+    inventory: {
+        type: INTEGER,
+        defaultValue: 50,
     },
     // origin_place:{
     //     type: STRING,

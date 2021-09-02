@@ -1,4 +1,4 @@
-const { INTEGER}= require('sequelize'); // for thing like Sequelize.STRING
+const { INTEGER} = require('sequelize'); // for thing like Sequelize.STRING
 
 //import your db
 const db = require('../db');

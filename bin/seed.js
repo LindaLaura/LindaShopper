@@ -175,7 +175,7 @@ const seed = async () => {
    //Review
    const review1 = await Review.create({
     title:"Beautiful",
-    descriptione:"It's beautifully painted and you can see the craftsmanship that went into it. We look forward to enjoying this piece for many many years.",
+    description:"It's beautifully painted and you can see the craftsmanship that went into it. We look forward to enjoying this piece for many many years.",
     rating: 4,
     userId: allUsers[1].id,
     productId: 2

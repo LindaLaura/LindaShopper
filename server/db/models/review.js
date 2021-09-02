@@ -10,7 +10,7 @@ const Review = db.define('review',{
         notEmpty: true,
         },
     },
-    descriptione:{
+    description:{
         type: TEXT,
         allowNull: false,
         validate: {

@@ -34,7 +34,7 @@ Category.hasMany(Product);
 
 //Product-Order
 Product.belongsToMany(Order , {through: Order_Product});
-Order.belongsToMany(Product , {through: Order_Product})
+Order.belongsToMany(Product , {through: Order_Product});
 
 
 
