@@ -1,0 +1,5 @@
+
+export const LOAD_REVIEWS = "LOAD_REVIEWS";
+export const CREATE_REVIEW = "CREATE_REVIEW";
+export const EDIT_REVIEW = "EDIT_REVIEW";
+export const DELETE_REVIEW = "DELETE_REVIEW";

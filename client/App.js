@@ -1,10 +1,16 @@
-import React, { Component }from 'react';
+import React, { Component } from 'react';
+import Navbar from './components/Navbar';
 
 
 
 class App extends Component {
   render(){
-    return(<div>I am rendering my app</div>)
+    return(
+      <div>
+        <Navbar/>
+        I am rendering my app
+      </div>
+    );
   }
 }
 
