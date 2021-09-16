@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 module.exports = {
     entry: ['./client/index.js'],
     output: {
@@ -5,20 +7,24 @@ module.exports = {
         filename: './public/bundle.js',
     },
     mode: 'development',
-    devtool: "eval-cheap-source-map",
+    devtool: "inline-source-map",
     module: {
         rules:[
             // {
-            //     test: /\.css$/,
-            //     use: ["style-loader", "css-loader"],
+            //     test: /\.s[ac]ss$/i,
+            //     use: ["style-loader", "css-loader", "sass-loader"],
             // },
             // {
             //     test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
-            //     loader: "url-loader",
+            //     loader: "file-loader",
             //     options: {
             //         limit: 10000,
             //     },
             // },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+            },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -28,5 +34,16 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    // resolve: {
+    //     fallback: {
+    //         http: require.resolve("stream-http"),
+    //     },
+    // },
+    // plugins: [
+    //     new webpack.ProvidePlugin({
+    //         process: "process/browser",
+    //     }),
+    //     new NodePolyfillPlugin(),
+    // ],
 }
